@@ -177,26 +177,49 @@
 ##else:
 ##    print("금요일에 구매 가능합니다.")
 #--------------------------------------------------------------------------------    
-import random
-
-x = random.randint(1, 10)
-y = random.randint(1, 10)
-t = random.randint(1, 4)
-
-if t == 1:       # 1 = +
-    p = x + y
-    q = float(input("%d+%d=" % (x, y)))  
-elif t == 2:     # 2 = -
-    p = x - y
-    q = float(input("%d-%d=" % (x, y)))
-elif t == 3:     # 3 = *
-    p = x * y
-    q = float(input("%dx%d=" % (x, y)))
-else:            # 4 = /
-    p = x / y
-    q = float(input("%d/%d=" % (x, y)))
-
-if q == p:
-    print("맞았습니다.")
-else:
-    print("틀렸습니다.")
+#import random
+#
+#x = random.randint(1, 10)
+#y = random.randint(1, 10)
+#t = random.randint(1, 4)
+#
+#if t == 1:       # 1 = +
+#    p = x + y
+#    q = float(input("%d+%d=" % (x, y)))  
+#elif t == 2:     # 2 = -
+#    p = x - y
+#    q = float(input("%d-%d=" % (x, y)))
+#elif t == 3:     # 3 = *
+#    p = x * y
+#    q = float(input("%dx%d=" % (x, y)))
+#else:            # 4 = /
+#    p = x / y
+#    q = float(input("%d/%d=" % (x, y)))
+#
+#if q == p:
+#    print("맞았습니다.")
+#else:
+#    print("틀렸습니다.")
+#--------------------------------------------------------------------------------
+#a = int(input("몇번인사하고싶어?"))
+#for i in range(a):
+#    print("어서와요!")
+#--------------------------------------------------------------------------------
+#aa = [10, 20, 30, 40]
+#slist = [" math", "eng", "society", "science"]
+#print(aa[3])
+#print(aa)
+#for i in aa:
+#    print("神")
+#    print("i =",i)  
+#--------------------------------------------------------------------------------
+#for i in range(시작값 0, 종료값(stop), step=1(한 번에 증가되는 값))
+#range는 반복 횟수를 전달하면 함수가 자동으로 순차적인 정수들을 생성해준다.
+#for i in [0,1,,,,999] → for i in range[1000]
+#for i in range(1,6,2):
+#    print(i)
+#sum = 0
+#for i in range(1,11,1):
+#    sum = sum + i
+#print("1부터 10까지의 합은", sum,"이다.")
+#--------------------------------------------------------------------------------
