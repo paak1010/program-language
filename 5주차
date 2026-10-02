@@ -1,0 +1,169 @@
+##while True:
+##    a = input("신호등 색상을 입력하시오.")
+##    if a == "green":
+##        break
+##print("전진")
+##---------------------------------------------------------
+##import random
+##b = random.randint(1,100)
+##n = 0
+##print("1부터 100까지 사이의 숫자를 맞추시오. ")
+##while True:
+##    a = int(input("숫자를 입력하시오."))
+##    n = n + 1
+##    if a == b:
+##        break
+##    elif a <= b:
+##        print("너무 낮늠!")
+##    elif a >= b:
+##        print("너무 높음!")
+##print("축하축하", f"시도횟수: {i+j}")
+##---------------------------------------------------------
+##
+##fruits = ["사과", "배", "포도", "두리안"]
+##
+##while True:
+##    a = input("사고 싶은 과일은 무엇입니까?")
+##    if a in fruits:
+##        print(f"네, {a}가 있습니다.")
+##    elif a == "끝":
+##        print("잘가요")
+##        break
+##    else:
+##        print(f"저희 가게에는 {a}가 없어요")
+##---------------------------------------------------------
+##pwd = 1234
+##n = 0
+##
+##while True:
+##    a = int(input("암호:"))
+##    n = n + 1
+##    if a == pwd:
+##        print("pass")
+##        break
+##    elif n >= 5:
+##        print("로그인 시도횟수 초과")
+##        break
+##    else:
+##        print("암호를 다시 입력하세요")
+##---------------------------------------------------------
+##for i  in ['a','b','c','d']:
+##    if i=='c':
+##        continue
+##    print(i)
+##---------------------------------------------------------
+##for i in range(1,11):
+##    if i % 3 == 0:
+##        continue
+##    print(i, end = " ")
+##---------------------------------------------------------
+##sum = 0
+##for i in range(1,101):
+##    if i % 3 == 0:
+##        continue
+##    sum = sum + i
+##print(f"1~100의 합계(3의 배수): {sum}")
+##---------------------------------------------------------
+##print("젤 큰 값을 출력해라")
+##
+##a = int(input("첫번째 수: "))
+##b = int(input("두번째 수: "))
+##c = int(input("세번째 수: "))
+##m = int(input(f"{a}, {b}, {c} 중 내 점수: "))
+##
+##rank = 1
+##
+##if m < b:
+##    rank = rank + 1
+##if m < c:
+##    rank = rank + 1
+##if m < a:
+##    rank = rank + 1
+##print(f"{a}, {b}, {c} 중 내 점수는 {rank}등입니다.")
+##---------------------------------------------------------
+##def hong_address():
+##    print("asdas")
+##    print("asdasd")
+##hong_address()
+##hong_address()
+##hong_address()
+##---------------------------------------------------------
+##def address(name):
+##    print("경기도 김포시")
+##    print("장기동 반도유보라")
+##    print("904-702")
+##a = input("이름:")
+##address(a)
+##---------------------------------------------------------
+##def sub():
+##        return 1, 2, 3
+##a, b, c  = sub()
+##print(a, b, c)
+##---------------------------------------------------------
+##def info():
+##    name = input("이름:")
+##    age = int(input("나이:"))
+##    return name, age
+##
+##a, b = info()
+##print(a, b)
+##---------------------------------------------------------
+##def rad():
+##    r = int(input("반지름을 입력하시오."))
+##    radius = 3.14 * r**2
+##    return r, radius
+##r, a = rad()
+##print(f"반지름이 {r}인 원의 면적은 {a}입니다.")
+####---------------------------------------------------------
+##def cal_sum(n):
+##    sum = 0
+##    for i in range(1,n+1):
+##        sum = sum + i
+##    return sum
+##hap = cal_sum(100)
+##print(hap)
+##---------------------------------------------------------
+##def cal_sum(n):
+##    sum = 0
+##    for i in range(1,n+1):
+##        sum = sum + i
+##    return sum
+##n = int(input("몇까지 합을 구할까요?"))
+##hap = cal_sum(n)
+##print(hap)
+##---------------------------------------------------------
+##def rad(r):
+##    radius = 3.14 *r**2
+##    return radius
+##a = rad(20)+rad(20)
+##b = rad(30)
+##print(f"반지름이 20인 피자 2개의 면적: {a}")
+##print(f"반지름이 30인 피자 1개의 면적: {b}")
+##---------------------------------------------------------
+##def greet(name, msg="별일었죠?"):
+##    print("안녕", name, msg)
+##
+##greet("영희")
+##greet("철수", "살아있어?")
+##---------------------------------------------------------
+##def add(*numbers):
+##    sum = 0
+##    for n in numbers:
+##        sum = sum + n
+##    return sum
+##print(add(10,20))
+##---------------------------------------------------------
+##def average(*numbers):
+##    sum = 0
+##    count = 0
+##    for n in numbers:
+##        sum = sum + n
+##        count = count + 1
+##    avg = sum / count
+##    print("총점:", sum)
+##    print("평점:", avg)
+##    return sum, avg
+##
+##average(90, 70, 80)
+##average(100, 70, 95, 100)
+##average(90, 30, 40, 100, 195)
