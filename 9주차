@@ -1,0 +1,291 @@
+###딕셔너리
+####
+####cap = {"korea":"seoul", "USA":"washington","UK":"London"}
+####print(cap["korea"])
+####
+######print(cap["france"])
+####
+####print(cap.get("france"))
+####print(cap.get("france", "해당키가없습니다"))
+####
+####a = {}
+####
+####a['F'] = 'paris'
+####
+####a['k'] ='seoul'
+####a['q'] = 'dokyo'
+####a['b'] = 'saigon'
+####a['v'] = 'toronto'
+####
+####print(a)
+####
+######print(a.keys())
+####print(list(a.keys()))
+####print(list(a.items()))
+####print(list(a.values()))
+####city = a.pop('k')
+####print(city)
+##
+####cap = {"korea":"seoul", "USA":"washington","UK":"London"}
+####for i in cap:
+####    print(i,":",cap[i])
+####
+####for key, value in cap.items():
+####    print(key,":",value)
+####
+####a = {"이름":"아이오아이", "구성원수":"11", "대표곡":"픽미업", "대뷔":"프로듀스101"}
+####
+####for i in a:
+####    print(i,"-->",a[i])
+##
+####dic= {}
+####
+####dic['one'] = '하나'
+####dic['two'] = '둘'
+####
+####
+####a = input("단어를 입력하시오")
+####
+####if a not in dic:
+####    print(dic.get("france", "해당키가없습니다"))
+####else:
+####    print(dic[a])
+####
+####fr = {}
+####fr['홍길동'] = '미디어커뮤니케이션학과'
+####fr['홍길순'] = '경제학과'
+####
+####a = input("이름을 입력하시오: ")
+####
+####if a in fr:
+####    print(fr[a])
+####else:
+####    print('없어요')
+##
+####s = {}
+####s['kim'] = [99,83,95]
+####s['lee'] = [68,45,78]
+####s['choi'] = [25,56,69]
+####
+####for i in s:
+####    print(f"{i}의 평균 성적: {sum(s[i])/len(s[i])}")
+##
+##st = {}
+##st['coffee'] = 7
+##st['pen'] = 3
+##st['cup'] = 2
+##st['milk'] = 1
+##st['coke'] = 3
+##st['book'] = 4
+##
+##
+##
+##while True:
+##    print('1. add')
+##    print('2. remove')
+##    print('3. current stock')
+##    print('4. end')
+##    s = int(input("menu: "))
+##    if s == 1:
+##        a = input("what product: ")
+##        if a in st:
+##            b = int(input("quatity for addition: "))
+##            st[a] = st[a]+ b
+##        else:
+##            b = int(input(f"upcoming quantity of {a}: "))
+##            st[a] = b
+##    elif s == 2:
+##        a = input("what product: ")
+##        if a in st:
+##            b = int(input("quatity for removal: "))
+##            if st[a]-b < 0 :
+##                print("no more stock")
+##                st[a] = 0
+##            else:
+##                st[a] = st[a]-b
+##        else:
+##            print('not available')
+##    elif s == 3:
+##        for i in st:
+##            print(i,":",st[i])
+##    elif s == 4:
+##        print('end')
+##        break
+####
+####c = {}
+####
+####while True:
+####    print('1. 연락처 추가')
+####    print('2. 연락처 삭제')
+####    print('3. 연락처 검색')
+####    print('4. 연락처 출력')
+####    print('5. 종료')
+####    a = int(input("메뉴 선택: "))
+####
+####    if a == 1:
+####        n = input("이름: ")
+####        nb = input("전화번호: ")
+####        c[n] = nb
+####    elif a == 2:
+####        n = input("이름: ")
+####        if n in c:
+####            c.pop(n)
+####
+####        else:
+####            print("이름이 존재하지 않습니다.")
+####    
+####    elif a == 3:
+####        n = input("이름: ")
+####        if n in c:
+####            print(n,':',c[n])
+####        else:
+####            print("이름이 존재하지 않습니다.")
+####    elif a == 4:
+####        for i in c:
+####            print(i,':',c[i])
+####    elif a == 5:
+####        print('프로그램을 종료합니다.')
+####        break
+####    else:
+####        print('잘못된 메뉴입니다.')
+##
+##a = input('소속을 입력하시오 ')
+##print(f"{a}는 {len(a)}글자입니다.")
+##for i in a:
+##    print(i)
+##
+##a = input("주민번호 입력: ")
+##
+##if int(a[6]) % 2 == 0:
+##    print('여자')
+##else:
+##    print('남자')
+##    
+##a = input('문자열 입력')
+##
+##for i in range(len(a)):
+##    print(a[i:])
+##for i in range(len(a)):
+##    print(a[:i+1])
+
+##s = 'monday python class'
+##print(s.replace('python','c-language'))
+##
+##a = input('문자열을 입력하시오 ')
+##
+##if a[::-1] == a[:]:
+##    print("회문입니다")
+##else:
+##    print("문자열입니다.")
+##
+##s = '       파     이    썬     '
+##a = s.strip()
+##b = s.rstrip()
+##c = s.lstrip()
+##print(a)
+##print(b)
+##print(c)
+
+##s = 'www.naver.co.kr'
+##print(s.find('.kr'))
+##
+##s = 'let it be, let it be, let it be'
+##print(s.rfind('let'))
+##
+##s = 'www.naver.co.kr'
+##print(s.count('.'))
+
+##s = 'welcome to python'
+##print(s.split())
+##
+##print(s.split(','))
+##
+##print(list(s))
+
+##col = ['red', 'blue', 'purple', 'green']
+##
+##print(':'.join(col))
+##
+##'010.1234.5678'
+##print('-'.join('010.1234.5678'.split('.')))
+##
+##a = 'hello world'
+##
+##b=list(a)
+##print(b)
+##
+##c = ''.join(a)
+##print(c)
+##a = input('입력 텍스트: ')
+##
+##c = set(a.split())
+##print('사용된 단어의 개수:',len(c))
+##print(c)
+
+##a = input("문자 입력: ")
+##d ={}
+##d['digits'] = len(set(a.split()))
+##d['spaces'] = a.count(" ")
+##d['alphas'] = len(list(a)) - a.count(" ") - 1 
+##print(d)
+##
+##sen = input('문자입력: ')
+##
+##table = {"alphas":0,"digits":0, "spaces":0}
+##
+##for i in sen:
+##    if i.isalpha():
+##        table["alphas"] = table["alphas"] + 1
+##    elif i.isdigit():
+##        table["digits"] = table["digits"] + 1
+##    elif i.isspace():
+##        table["spaces"] = table["spaces"] + 1
+##
+##print(table)
+##
+##a = input('문자 입력: ')
+##
+##
+##b = ''
+##
+##for i in a.upper().split():
+##    b += i[0]
+##
+##print(b)
+##
+##a = input("이메일 주소: ")
+##
+##b = a.split('@')
+##id = b[0]
+##add = b[1]
+##
+##print(a)
+##print('ID:', id)
+##print('domein:',add)
+
+##t = 'python is very easy and powerful'
+##
+##length = len(t.split())
+##print(length)
+##
+##text = ' create the highest, greatest vision possible for your life, because you become what you believe'
+##
+##d = {}
+##
+##for w in text.split():
+##    if w in d:
+##        d[w] += 1
+##    else:
+##        d[w] = 1
+##for w, count in sorted(d.items()):
+##    print(w,'의 등장횟수: ', count)
+
+ls = ['apple', 'banana', 'pinapple', 'kiwi']
+
+a = ''
+
+for i in ls:
+    if 'a' in i:
+        print(i)
+
+
